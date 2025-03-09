@@ -6,6 +6,16 @@
     <title>Document</title>
     <!-- tailwind-setup -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script>tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                },
+            },
+        },
+    }
+        </script>
     <!-- font-awesome-setup -->
     <script src="https://kit.fontawesome.com/ebafc37a41.js" crossorigin="anonymous"></script>
     <!-- google-font -->
@@ -13,9 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <style 
-    
-    type="text/tailwindcss">
+    <style>
 
      .manrope-font {
       font-family: "Manrope", sans-serif;
@@ -26,15 +34,15 @@
 <body class="manrope-font">
     <main>
         <!-- Header-Section -->
-        <header class="justify-center items-center md:flex">
-            <div>
-                <h1 class="font-extrabold text-3xl mb-8 md:text-5xl">It's good <br> 
+        <header class=" justify-center items-center md:flex ">
+            <div class="">
+                <h1 class="font-bold text-2xl md:font-extrabold mb-8 md:text-3xl lg:text-5xl">It's good <br> 
                     tea time at The <br> Tea House</h1>
                     <p class="text-[#777777] mb-6">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
                     <button class="w-2/3 rounded-lg px-2 py-2 font-bold text-white bg-linear-to-r from-orange-500 to-red-500">Explore More <i class="fa-solid fa-arrow-right font-light ml-2 -rotate-45"></i> </button>
             </div>
             <div class="realtive">
-                <img class="ml-12" src="/images/banner.png" alt="">
+                <img class="ml-12 sm:w-1/2 md:w-1/2 lg:w-full " src="images/banner.png" alt="">
                 <div class="absolute -mt-24 ml-48 px-4 py-4 flex gap-3 items-center drop-shadow-lg rounded-lg bg-white">
                     <div>
                         <i class="fa-solid fa-star text-amber-500 text-2xl"></i>
@@ -46,6 +54,34 @@
                 </div>
             </div>
         </header>
+        <section class=" items-center justify-center mt-6">
+            <div class="text-center">
+                <h1 class="text-3xl lg:text-5xl mb-4">Our Featured Products</h1>
+                <p class="w-2/3 text-gray-500 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            </div>
+            <div class="w-2/3 grid md:grid-cols-2 lg:grid-cols-4 lg:gap-4 mt-8 mb-10 mx-auto ">
+                <div class="bg-gray-100 px-2 py-2 rounded-lg items-center justify-center">
+                    <img class="ml-6" src="images/tea-1.png" alt="">
+                    <h2 class="text-center mt-2 text-xl font-bold">Milk Tea</h2>
+                    <p class="p-2 text-center">Creamer could be replaced by fresh milk</p>
+                </div>
+                <div class="bg-gray-100 px-2 py-2 rounded-lg items-center justify-center">
+                    <img class="ml-6" src="images/tea-2.png" alt="">
+                    <h2 class="text-center mt-2 text-xl font-bold">Black Tea</h2>
+                    <p class="p-2 text-center">Creamer could be replaced by fresh milk</p>
+                </div>
+                <div class="bg-gray-100 px-2 py-2 rounded-lg items-center justify-center">
+                    <img class="ml-6" src="images/tea-3.png" alt="">
+                    <h2 class="text-center mt-2 text-xl font-bold">Lemon Tea</h2>
+                    <p class="p-2 text-center">Creamer could be replaced by fresh milk</p>
+                </div>
+                <div class="bg-gray-100 px-2 py-2 rounded-lg items-center justify-center">
+                    <img class="ml-6" src="images/tea-4.png" alt="">
+                    <h2 class="text-center mt-2 text-xl font-bold">Green Tea</h2>
+                    <p class="p-2 text-center">Creamer could be replaced by fresh milk</p>
+                </div>
+            </div>
+        </section>
     </main>
     
 </body>
